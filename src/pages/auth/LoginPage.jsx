@@ -508,7 +508,7 @@ const LoginPage = () => {
                       }}
                     >
                       <PeopleIcon fontSize="small" />
-                      <Typography variant="body2">HR Login</Typography>
+                      <Typography variant="body2">HR Loginnn</Typography>
                     </ToggleButton>
                     <ToggleButton 
                       value="emp" 

@@ -107,6 +107,7 @@ import OfferLetterPending from "../pages/hrMonitor/OfferLetterPending";
 import UserPerspective from "../pages/perspective/UserPerspective";
 import AddPerspectivePage from "../pages/perspective/AddPerspectivePage";
 import MyPerspective from "../pages/perspective/MyPerspective";
+import MyAttendence from "../pages/attendence/dashboard/MyAttendence";
 
 
 // Define roles for different route groups
@@ -246,6 +247,14 @@ const router = createBrowserRouter([
         element: (
           <ProtectedRoute requiredRole={EMPLOYEE_ROLE}>
             <AttendenceEmp />
+          </ProtectedRoute>
+        ),
+      },
+      {
+        path: "emp-attendence",
+        element: (
+          <ProtectedRoute requiredRole={EMPLOYEE_ROLE}>
+            <MyAttendence />
           </ProtectedRoute>
         ),
       },

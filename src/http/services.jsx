@@ -1,5 +1,5 @@
 export const base_url = "https://app.ventureconsultancyservices.com"
-export const base_Ip = "192.168.1.34";
+export const base_Ip = "192.168.1.28";
 // export const base_url2 = "http://192.168.1.19:7000/identity-handler"
 
 
@@ -10,13 +10,15 @@ export const base_Ip = "192.168.1.34";
 
 
 
-// export const base_identity = "http://192.168.1.27:7000";
-// export const base_hr = "http://192.168.1.27:7002";
-// export const base_emp = "http://192.168.1.27:7005";
+export const base_identity = "http://192.168.1.28:7000";
+export const base_hr = "http://192.168.1.28:7002";
+export const base_emp = "http://192.168.1.28:7005";
+
 
 export const base_identity = "http://192.168.1.28:7000";
 export const base_hr = "http://192.168.1.28:7002";
 export const base_emp = "http://192.168.1.28:7005";
+
 export const base_candidate = "http://192.168.1.28:7004";
 
 

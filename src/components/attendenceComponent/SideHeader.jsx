@@ -129,7 +129,7 @@ const navItems = [
         text: 'Core Employee',
         icon: <PersonIcon />,
         subItems: [
-          { text: 'Attendance', path: '/dashboard-emp/attendence-emp', icon: <EventIcon /> },
+          { text: 'Attendance', path: '/dashboard-emp/emp-attendence', icon: <EventIcon /> },
           { text: 'Upload Documents', path: '/dashboard-emp/emp-doc-upload', icon: <CloudUploadIcon /> },
         ]
       },

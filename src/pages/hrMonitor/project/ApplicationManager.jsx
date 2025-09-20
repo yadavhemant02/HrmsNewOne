@@ -450,21 +450,7 @@ const ApplicationManager = () => {
                   }}
                 >
                   <CardContent sx={{ p: 3 }}>
-                    <Box display="flex" alignItems="center" justifyContent="space-between" mb={2}>
-                      <Box
-                        sx={{
-                          p: 2,
-                          borderRadius: 2,
-                          background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-                          color: 'white'
-                        }}
-                      >
-                        <PeopleIcon sx={{ fontSize: 24 }} />
-                      </Box>
-                      <Typography variant="body2" color="success.main" fontWeight="600">
-                        +12% from last month
-                      </Typography>
-                    </Box>
+                   
                     <Typography variant="h3" fontWeight="700" color="text.primary" mb={0.5}>
                       {stats.total}
                     </Typography>
@@ -518,21 +504,6 @@ const ApplicationManager = () => {
                   }}
                 >
                   <CardContent sx={{ p: 3 }}>
-                    <Box display="flex" alignItems="center" justifyContent="space-between" mb={2}>
-                      <Box
-                        sx={{
-                          p: 2,
-                          borderRadius: 2,
-                          background: 'linear-gradient(135deg, #4caf50 0%, #81c784 100%)',
-                          color: 'white'
-                        }}
-                      >
-                        <AssignmentIcon sx={{ fontSize: 24 }} />
-                      </Box>
-                      <Typography variant="body2" color="success.main" fontWeight="600">
-                        +8% efficiency
-                      </Typography>
-                    </Box>
                     <Typography variant="h3" fontWeight="700" color="text.primary" mb={0.5}>
                       {stats.assigned}
                     </Typography>
@@ -586,21 +557,6 @@ const ApplicationManager = () => {
                   }}
                 >
                   <CardContent sx={{ p: 3 }}>
-                    <Box display="flex" alignItems="center" justifyContent="space-between" mb={2}>
-                      <Box
-                        sx={{
-                          p: 2,
-                          borderRadius: 2,
-                          background: 'linear-gradient(135deg, #ff9800 0%, #ffb74d 100%)',
-                          color: 'white'
-                        }}
-                      >
-                        <PersonAddIcon sx={{ fontSize: 24 }} />
-                      </Box>
-                      <Typography variant="body2" color="warning.main" fontWeight="600">
-                        Pending action
-                      </Typography>
-                    </Box>
                     <Typography variant="h3" fontWeight="700" color="text.primary" mb={0.5}>
                       {stats.unassigned}
                     </Typography>
@@ -654,21 +610,6 @@ const ApplicationManager = () => {
                   }}
                 >
                   <CardContent sx={{ p: 3 }}>
-                    <Box display="flex" alignItems="center" justifyContent="space-between" mb={2}>
-                      <Box
-                        sx={{
-                          p: 2,
-                          borderRadius: 2,
-                          background: 'linear-gradient(135deg, #2196f3 0%, #64b5f6 100%)',
-                          color: 'white'
-                        }}
-                      >
-                        <AnalyticsIcon sx={{ fontSize: 24 }} />
-                      </Box>
-                      <Typography variant="body2" color="info.main" fontWeight="600">
-                        Target: 95%
-                      </Typography>
-                    </Box>
                     <Typography variant="h3" fontWeight="700" color="text.primary" mb={0.5}>
                       {stats.assignmentRate}%
                     </Typography>
@@ -697,27 +638,23 @@ const ApplicationManager = () => {
 
           {/* Professional Search & Filter Section */}
           <Slide direction="up" in={true} timeout={1000}>
-            <Card
+            {/* <Card
               elevation={0}
               sx={{
                 mb: 4,
                 borderRadius: 3,
-                background: '#fff',
+                // background: '#fff',
                 border: '1px solid #e1e5e9',
-                '&:hover': {
-                  boxShadow: '0 8px 32px rgba(0,0,0,0.08)',
-                }
+                // '&:hover': {
+                //   boxShadow: '0 8px 32px rgba(0,0,0,0.08)',
+                // }
               }}
             >
+            
+            </Card> */}
+
               <CardContent sx={{ p: 3 }}>
-                <Box sx={{ mb: 3 }}>
-                  <Typography variant="h6" fontWeight="600" color="text.primary" mb={1}>
-                    Search & Filter Team Members
-                  </Typography>
-                  <Typography variant="body2" color="text.secondary">
-                    Find and manage team members efficiently with advanced search capabilities
-                  </Typography>
-                </Box>
+               
                 
                 <Grid container spacing={3} alignItems="center">
                   <Grid item xs={12} md={8}>
@@ -742,7 +679,8 @@ const ApplicationManager = () => {
                                 sx={{
                                   color: '#667eea',
                                   '&:hover': {
-                                    bgcolor: 'rgba(102, 126, 234, 0.1)'
+                                    bgcolor: 'rgba(102, 126, 234, 0.1)',
+                                    boxShadow: '0 8px 32px rgba(0,0,0,0.08)',
                                   }
                                 }}
                               >
@@ -813,7 +751,6 @@ const ApplicationManager = () => {
                   </Grid>
                 </Grid>
               </CardContent>
-            </Card>
           </Slide>
 
           {/* Professional Members Management Table */}

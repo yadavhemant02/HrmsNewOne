@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HRIMS</title>
+  <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+  <script>
+    window.OneSignalDeferred = window.OneSignalDeferred || [];
+    OneSignalDeferred.push(async function () {
+      try {
+        await OneSignal.init({
+          appId: "eec7dcbe-2e92-4656-ac7d-e7eb323364b4",
+          safari_web_id: "web.onesignal.auto.246fdfe2-a404-4d40-aa8a-d2b211d431d5",
+          notifyButton: {
+            enable: true,
+          },
+          allowLocalhostAsSecureOrigin: true
+        });
+
+        // Wait for initialization to complete
+        await OneSignal.Notifications.requestPermission();
+
+        // Now set external user ID
+        await OneSignal.login("ABC123");
+
+        console.log("OneSignal initialized and user ID set");
+      } catch (error) {
+        console.error("OneSignal initialization error:", error);
+      }
+    });
+  </script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>

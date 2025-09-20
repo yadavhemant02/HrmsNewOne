@@ -38,7 +38,7 @@ import BusinessIcon from "@mui/icons-material/Business";
 import EditIcon from "@mui/icons-material/Edit";
 import DeleteIcon from "@mui/icons-material/Delete";
 import axios from "axios";
-import { base_emp, base_Ip, base_url } from "../../http/services";
+import { base_emp, base_hr, base_Ip, base_url } from "../../http/services";
 import { styled } from "@mui/system";
 import { useNavigate } from "react-router-dom";
 import ShapesLoader from "../../constent/ShapesLoader";
@@ -111,7 +111,7 @@ const Attendance = () => {
       setLoading(true);
       setError(null);
       const response = await axios.get(
-        `http://localhost:7002/hr-handler/office/get-office-info?organizationCode=HRHaaTCKD0`
+        `${base_hr}/hr-handler/office/get-office-info?organizationCode=HRHaaTCKD0`
       );
 
       console.log("responseeeeeeeeeeeeeeeeeeeee", response);
@@ -299,7 +299,7 @@ const Attendance = () => {
   const handleSubmit = async () => {
     try {
       const response = await axios.post(
-        `http://localhost:7002/hr-handler/office/add-office-info`,
+        `${base_hr}/hr-handler/office/add-office-info`,
         formData
       );
       

@@ -14,9 +14,11 @@ export const base_identity = "http://192.168.1.28:7000";
 export const base_hr = "http://192.168.1.28:7002";
 export const base_emp = "http://192.168.1.28:7005";
 
-// export const base_identity = "http://localhost:7000";
-// export const base_hr = "http://localhost:7002";
-// export const base_emp = "http://localhost:7005";
+
+export const base_identity = "http://192.168.1.28:7000";
+export const base_hr = "http://192.168.1.28:7002";
+export const base_emp = "http://192.168.1.28:7005";
+
 export const base_candidate = "http://192.168.1.28:7004";
 
 
